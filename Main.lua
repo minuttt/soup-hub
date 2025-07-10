@@ -8,9 +8,9 @@ local window = DrRayLibrary:Load("DrRay!", "Default")
 local tab1 = DrRayLibrary.newTab("Tab 1", "ImageIdHere")
 
 -- Add elements to the first tab
-tab1.newLabel("TDINOSEX")
+tab1.newLabel("Load INFINITE YIELD")
 tab1.newButton("Button", "Prints Hello!", function()
-    print('Hello!')
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source"))()
 end)
 tab1.newToggle("TDINOREX", "Toggle! (prints the state)", true, function(toggleState)
     if toggleState then
